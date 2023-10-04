@@ -1,37 +1,85 @@
-/* Apply styles to the App container */
 .App {
+  box-sizing: border-box;
   text-align: center;
-  max-width: 600px; 
-  margin: 0 auto; 
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  color:whitesmoke;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/* Apply styles to the Display */
-.CalcuDisplay {
-  color: white;
-  font-size: 60px;
-  background-color: black;
+
+.CalcContainer {
+  width: 500px;
+  margin:auto;
+  text-align: center;
+  padding: 50px;
+  background-color: #212223;
+  display:grid;
+  position: relative;
+  top: 20px;
+  border-radius: 10%;
+}
+
+.CalcDisplay {
+
+  height: 40px;
+  font-size: 2em;
   text-align: right;
-  padding: 10px; 
+  padding:10px;
+  background: #212223;
+  color:#F5F5E9;
+  margin-bottom: 2px;
+  
 }
 
-/* Apply styles to the Buttons */
-.CalcuButton {
-  justify-content: center; 
-  align-items: center; 
-  font-size: 45px;
-  width: 25%; 
-}
-
-/* Apply styles to the Container */
 .ButtonContainer {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  align-items: center; 
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.NameButton {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  font-size: 25px; /* Set the height of the container to 100% to fill the parent */
+
+.CalcButtonNum {
+    font-size: 2em;
+    justify-content: center;
+    color: #636059;
+    background-color: #F2F1F0;
+    border: 1px solid #F2F1FD;
+    padding: 5px;
+    height: 120px;
+
 }
+
+.CalcButton {
+  font-size: 2em;
+  justify-content: center;
+  color: #636059;
+  background-color: #D6D6D6;
+  border: 1px solid #D6D6D6;
+}
+
+.CalcButtonName {
+  font-size: 2em;
+  justify-content: center;
+  border-radius: 30px;
+  color: #833ab4;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #D6D6D6;
+  border-color: #212223;
+}
+
+.Name {
+  margin-top: 10px;
+}
+
+.Notes {
+  padding: 10px;
+  margin: 100px 200px;
+  font-size: 1.5em;
+  text-align: left;
+  color: #212223;
+  font-weight: 500;
+}
+
+

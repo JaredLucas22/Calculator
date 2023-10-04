@@ -7,19 +7,14 @@ function getImageUrl(person, size = 's') {
   );
 }
 
-
-
-//Running the Code:
 export default function Avatar({ person, size }) {
   return (
     <img
       className="avatar"
       src={getImageUrl(person)}
-      alt={person.name}// Curly Bracket for Actual Value
+      alt={person.name}
       width={size}
       height={size}
     />
-    
   );
 }
-//Running the Code:
