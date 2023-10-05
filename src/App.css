@@ -66,9 +66,23 @@
   color: #833ab4;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: #D6D6D6;
-  border-color: #212223;
+  width: 500px;
+  height: 50px;
 }
+.CalcButton:hover,.CalcButtonNum:hover{
+background-color: #3e3f3f;
+color: #D6D6D6;
+border: #212223;
+transition-duration: 220ms ;
 
+}
+.CalcButtonName:hover{
+  background:linear-gradient(200deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  color: rgb(226, 226, 226);
+  transition-duration: 220ms ;
+  border: #212223;
+
+}
 .Name {
   margin-top: 10px;
 }
