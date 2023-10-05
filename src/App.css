@@ -51,6 +51,13 @@
 
 }
 
+.CalcButtonNum:hover ,.CalcButton:hover, .CalcButton:hover{
+  background-color: #212223;
+  color: whitesmoke;
+  animation-duration: 4s;
+  border: #7e8080;
+}
+
 .CalcButton {
   font-size: 2em;
   justify-content: center;

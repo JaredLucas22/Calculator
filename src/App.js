@@ -91,8 +91,7 @@ export default function App() {
 
   const nameClickHandler = (e) => {
     e.preventDefault();
-    // Action to display your name
-    alert("JARED JOHN C. LUCAS BSIT-3A 2023 - 2024");
+    setDisp("JARED JOHN C. LUCAS BSIT-3A");
   }
 
   return (
@@ -114,7 +113,7 @@ export default function App() {
           <CalcButton label={3} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
           <CalcButton label={"="} onClick={equalClickHandler}/>
           <CalcButton label={"C"} onClick={clearClickHandler}/>
-          <CalcButton label={"0"} onClick={numberClickHandler}buttonClassName={"CalcButtonNum"}/>
+          <CalcButton label={"0"} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
           <CalcButton label={"*"} onClick={operatorClickHandler} />
           <CalcButton label={"/"} onClick={operatorClickHandler} />
           
